@@ -1,0 +1,46 @@
+.heading {
+  font-size: 76px;
+  color: var(--text-white);
+}
+
+.supportEmail {
+  color: var(--text-gray);
+  margin: 0;
+}
+
+.submitBtn {
+  background-color: var(--color-yellow);
+  color: var(--text-black);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: 30%;
+  font-weight: bolder;
+  align-self: flex-end;
+}
+
+.inputField {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: none;
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.textareaField {
+  background-color: transparent;
+  color: var(--text-gray);
+  border: none;
+  padding: 20px 10px;
+  border-bottom: 1px solid var(--color-gray);
+}
+
+.certificationsContainer {
+  width: 30%;
+  margin-top: 100px;
+}
+
+.certifications {
+  width: 100%;
+  height: auto;
+}

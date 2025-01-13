@@ -1,0 +1,15 @@
+:root {
+  --color-black: #111111;
+  --page-background-dark: #212121;
+  --page-background-light: #ffffff;
+  --text-yellow: #ead300;
+  --color-yellow: #ead300;
+  --text-white: #ffffff;
+  --text-black: #111111;
+  --text-gray: #c6c6c6;
+  --color-gray: #c6c6c6;
+}
+
+body {
+  font-family: "Manrope", serif;
+}

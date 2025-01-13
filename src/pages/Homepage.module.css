@@ -1,0 +1,14 @@
+/* .headerContainer {
+}
+.servicesContainer {
+} */
+.mainContainer {
+  background-color: var(--page-background-dark);
+}
+
+.projectsContainer {
+  background-color: var(--page-background-light);
+}
+.expertiseCardContainer {
+  background-color: var(--page-background-light);
+}

@@ -1,0 +1,17 @@
+.titleLight {
+  color: var(--text-black);
+  font-size: 48px;
+}
+.subTitleLight {
+  color: var(--text-yellow);
+  font-size: 24px;
+}
+
+.titleDark {
+  font-size: 48px;
+  color: var(--text-white);
+}
+.subTitleDark {
+  color: var(--text-yellow);
+  font-size: 24px;
+}

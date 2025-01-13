@@ -1,0 +1,56 @@
+.cardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  max-width: 420px;
+  border: 1px solid var(--color-gray);
+  padding: 30px;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.imgContainer {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid var(--color-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.img {
+  height: 80%;
+  width: 90%;
+  object-fit: cover;
+}
+.title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.descriptionContainer {
+  max-width: 100%;
+  max-height: 400px; /* You can adjust this value as needed */
+  color: var(--text-gray);
+  overflow: hidden; /* Hide any content that exceeds max-height */
+}
+
+.description {
+  font-size: 20px;
+  text-align: justify; /* Optional: Justify the text */
+  text-overflow: ellipsis; /* Add ellipsis when text overflows */
+  overflow: hidden; /* Hide any content that overflows */
+  display: -webkit-box; /* Needed for webkit-line-clamp */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit to 5 lines, adjust as needed */
+}

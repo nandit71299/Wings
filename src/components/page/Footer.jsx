@@ -1,0 +1,120 @@
+import React from "react";
+import styles from "./Footer.module.css";
+
+const footerData = {
+  menu: [
+    {
+      title: "Services",
+      items: [
+        {
+          label: "Web Application Development",
+          href: "/services/web-application-development",
+        },
+        {
+          label: "Mobile App Development",
+          href: "/services/mobile-app-development",
+        },
+        {
+          label: "E-commerce Development",
+          href: "/services/ecommerce-development",
+        },
+        {
+          label: "Software Testing & QA",
+          href: "/services/software-testing-qa",
+        },
+        { label: "SEO", href: "/services/seo" },
+        { label: "Digital Marketing", href: "/services/digital-marketing" },
+      ],
+    },
+    {
+      title: "Outsourcing",
+      items: [
+        {
+          label: "Laravel Developers",
+          href: "/outsourcing/laravel-developers",
+        },
+        {
+          label: "Angular Developers",
+          href: "/outsourcing/angular-developers",
+        },
+        { label: "Next.js Developers", href: "/outsourcing/nextjs-developers" },
+        {
+          label: "React.js Developers",
+          href: "/outsourcing/reactjs-developers",
+        },
+        {
+          label: "Flutter Developers",
+          href: "/outsourcing/flutter-developers",
+        },
+        {
+          label: "Android Developers",
+          href: "/outsourcing/android-developers",
+        },
+      ],
+    },
+    {
+      title: "About Us",
+      items: [
+        { label: "About Us", href: "/about/about-us" },
+        { label: "Contact Us", href: "/about/contact-us" },
+        { label: "Privacy Policy", href: "/about/privacy-policy" },
+        { label: "Terms of Services", href: "/about/terms-of-services" },
+      ],
+    },
+    {
+      title: "Work Life",
+      items: [
+        { label: "Careers", href: "/work-life/careers" },
+        { label: "HR Policy", href: "/work-life/hr-policy" },
+        { label: "Life @ Wings", href: "/work-life/life-at-wings" },
+        { label: "Our Team", href: "/work-life/our-team" },
+      ],
+    },
+  ],
+};
+
+function Footer() {
+  return (
+    <div>
+      <footer className={`${styles.footerContainer} p-5`}>
+        <div className={`${styles.footerItemsContainer} px-5`}>
+          {footerData.menu.map((section, index) => (
+            <div key={index}>
+              <h4 className={styles.sectionTitle}>{section.title}</h4>
+              <ul className={styles.list}>
+                {section.items.map((item, idx) => (
+                  <li key={idx} className={styles.listItem}>
+                    <a href={item.href}>{item.label}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </div>
+      </footer>
+      <div className="text-center">
+        <p className={styles.copyright}>
+          Copyright © 2024 Wings Tech Solutions Pvt. Ltd. All rights reserved.
+        </p>
+        <div className={styles.dateAndTime}>
+          <p>India</p>
+          <p>•</p>
+          <p>
+            {new Date()
+              .toLocaleString("en-IN", {
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+                hour12: true, // Optional: Use 12-hour format (AM/PM)
+              })
+              .toUpperCase()}
+          </p>
+          <p>•</p>
+          <p>22° C</p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

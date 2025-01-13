@@ -1,0 +1,64 @@
+.cardContainer {
+  width: 245px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.imgContainer {
+  height: 240px;
+  width: 100%;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.sectorAndServiceContainer {
+  display: flex;
+  font-size: 14px;
+  color: white;
+  max-width: 100%;
+  text-wrap: nowrap;
+}
+
+.sector,
+.service {
+  color: var(--text-gray);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0;
+}
+
+.titleContainer {
+  height: 20px;
+  text-wrap: nowrap;
+  max-height: 40px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-white);
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.storyContainer {
+  max-width: 100%;
+  max-height: 200px; /* You can adjust this value as needed */
+  color: var(--text-gray);
+  overflow: hidden; /* Hide any content that exceeds max-height */
+}
+
+.story {
+  text-align: justify; /* Optional: Justify the text */
+  margin-top: 10px;
+  text-overflow: ellipsis; /* Add ellipsis when text overflows */
+  overflow: hidden; /* Hide any content that overflows */
+  display: -webkit-box; /* Needed for webkit-line-clamp */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* Limit to 5 lines, adjust as needed */
+}

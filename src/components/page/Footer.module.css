@@ -1,0 +1,43 @@
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerItemsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.sectionTitle {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-white);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listItem > a {
+  color: var(--text-gray);
+  text-decoration: none;
+}
+
+.copyright {
+  color: var(--text-white);
+}
+
+.dateAndTime {
+  color: var(--text-gray);
+  display: flex;
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+}

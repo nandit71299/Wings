@@ -1,0 +1,22 @@
+.mainContainer {
+  background-color: var(--color-black);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.logoImgContainer {
+  height: 50%;
+  width: 50%;
+}
+
+.logoImg {
+  width: 30%;
+  height: auto;
+}
