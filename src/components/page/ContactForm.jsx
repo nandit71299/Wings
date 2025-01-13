@@ -2,11 +2,17 @@ import React from "react";
 import styles from "./ContactForm.module.css";
 import { Form } from "react-router-dom";
 import certifications from "../../assets/imgAssets/certifications.png";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function ContactForm() {
+  const isMobile = useIsMobile();
   return (
     <div className="d-flex flex-column justify-content-between align-items-center p-5">
-      <div className="d-flex justify-content-between w-100">
+      <div
+        className={`d-flex justify-content-between w-100 ${
+          isMobile ? "flex-wrap" : ""
+        }`}
+      >
         {/* Left Content */}
         <div
           className="d-flex flex-column justify-content-between "
@@ -76,13 +82,20 @@ function ContactForm() {
               </div>
             </div>
 
-            <button type="submit" className={`${styles.submitBtn} mt-3`}>
+            <button
+              type="submit"
+              className={`${styles.submitBtn} mt-3`}
+              style={{ width: isMobile ? "100%" : "" }}
+            >
               Send Message
             </button>
           </Form>
         </div>
       </div>
-      <div className={styles.certificationsContainer}>
+      <div
+        style={{ width: isMobile ? "100%" : "" }}
+        className={styles.certificationsContainer}
+      >
         <img
           src={certifications}
           alt="Certifications"

@@ -40,11 +40,6 @@ const servicesCards = [
     img: `${eCommerceImg}`,
   },
   {
-    id: 2,
-    title: "E-commerce Development",
-    img: `${eCommerceImg}`,
-  },
-  {
     id: 3,
     title: "Web Development",
     img: `${webImg}`,
@@ -179,7 +174,7 @@ const expertises = [
 function Homepage() {
   return (
     <>
-      <div className={`${styles.headerContainer}`}>
+      <div className={`${styles.heroSectionContainer}`}>
         <HeroSection
           img={heroSectionBg}
           title={"Build smarter, grow faster with"}
@@ -231,7 +226,7 @@ function Homepage() {
             title={"Customer Stories"}
             subtitle={"We transform our customers beliefs into reality."}
           />
-          <div className="d-flex px-5 gap-4 pb-5">
+          <div className="d-flex px-5 gap-4 pb-5 overflow-scroll">
             {stories.map((story) => {
               return (
                 <div key={story.id} className="d-flex gap-5">

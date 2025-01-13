@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import useIsMobile from "../../hooks/useIsMobile";
 
 const footerData = {
   menu: [
@@ -74,10 +75,19 @@ const footerData = {
 };
 
 function Footer() {
+  const isMobile = useIsMobile();
   return (
-    <div>
-      <footer className={`${styles.footerContainer} p-5`}>
-        <div className={`${styles.footerItemsContainer} px-5`}>
+    <div className="pe-5">
+      <footer
+        className={`${styles.footerContainer} ${
+          isMobile ? "p-5" : "p-3"
+        } pb-5 `}
+      >
+        <div
+          className={`px-5 ${styles.footerItemsContainer} ${
+            isMobile ? "flex-wrap gap-5 w-100 p-0" : ""
+          } `}
+        >
           {footerData.menu.map((section, index) => (
             <div key={index}>
               <h4 className={styles.sectionTitle}>{section.title}</h4>

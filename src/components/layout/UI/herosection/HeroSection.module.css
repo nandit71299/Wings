@@ -2,6 +2,7 @@
   height: 548px;
   width: 100vw;
   background-size: cover;
+  background-position: top;
   position: relative;
   display: flex;
   justify-content: center;
