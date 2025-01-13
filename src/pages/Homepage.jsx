@@ -40,6 +40,11 @@ const servicesCards = [
     img: `${eCommerceImg}`,
   },
   {
+    id: 2,
+    title: "E-commerce Development",
+    img: `${eCommerceImg}`,
+  },
+  {
     id: 3,
     title: "Web Development",
     img: `${webImg}`,
