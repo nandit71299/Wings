@@ -77,7 +77,7 @@ const footerData = {
 function Footer() {
   const isMobile = useIsMobile();
   return (
-    <div className="pe-5">
+    <div className={`${isMobile ? "p-1" : "pe-5"}`}>
       <footer
         className={`${styles.footerContainer} ${
           isMobile ? "p-5" : "p-3"

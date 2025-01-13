@@ -1,15 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import useIsMobile from "../../../hooks/useIsMobile";
 
 function Header() {
+  const isMobile = useIsMobile();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
   return (
     <header>
       <nav>
         <div
           className={`${styles.mainContainer} d-flex justify-content-between align-items-center`}
         >
-          <div className={`${styles.logoImgContainer}`}>
+          <div
+            className={`${styles.logoImgContainer}`}
+            style={{
+              height: isMobile ? "100%" : "50%",
+              width: isMobile ? "100%" : "50%",
+            }}
+          >
             <Link to={"/"}>
               <img
                 className={`${styles.logoImg}`}
@@ -18,38 +30,83 @@ function Header() {
               />
             </Link>
           </div>
-          <div>
-            <ul className="nav-links d-flex gap-5 m-0 px-3">
-              <li>
-                <a
-                  className="text-decoration-none text-white"
-                  href="/who-are-we"
-                >
-                  Who are we
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/what-we-do"
-                  className="text-decoration-none text-white"
-                >
-                  What we do
-                </a>
-              </li>
-              <li>
-                <a href="/careers" className="text-decoration-none text-white">
-                  Careers
-                </a>
-              </li>
-              <li>
-                <a href="/contact" className="text-decoration-none text-white">
-                  Contact Us
-                </a>
-              </li>
-            </ul>
-          </div>
+
+          {!isMobile && (
+            <div>
+              <ul className="nav-links d-flex gap-5 m-0 px-3">
+                <li>
+                  <a
+                    className="text-decoration-none text-white"
+                    href="/who-are-we"
+                  >
+                    Who are we
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-decoration-none text-white"
+                    href="/what-we-do"
+                  >
+                    What we do
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-decoration-none text-white"
+                    href="/careers"
+                  >
+                    Careers
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-decoration-none text-white"
+                    href="/contact"
+                  >
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </div>
+          )}
+
+          {isMobile && (
+            <button className={styles.menuButton} onClick={toggleMenu}>
+              ☰
+            </button>
+          )}
         </div>
       </nav>
+
+      {isMobile && isMenuOpen && (
+        <div className={styles.mobileMenu}>
+          <button className={styles.closeButton} onClick={toggleMenu}>
+            ×
+          </button>
+          <ul className="nav-links d-flex flex-column align-items-center">
+            <li>
+              <a className="text-decoration-none text-white" href="/who-are-we">
+                Who are we
+              </a>
+            </li>
+            <li>
+              <a className="text-decoration-none text-white" href="/what-we-do">
+                What we do
+              </a>
+            </li>
+            <li>
+              <a className="text-decoration-none text-white" href="/careers">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a className="text-decoration-none text-white" href="/contact">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+      )}
     </header>
   );
 }
