@@ -67,7 +67,7 @@ function Footer() {
     <div className={`${isMobile ? "p-1" : "pe-5"}`}>
       <footer
         className={`${styles.footerContainer} ${
-          isMobile ? "p-5" : "p-3"
+          isMobile ? "p-2" : "p-3"
         } pb-5 `}
       >
         <div

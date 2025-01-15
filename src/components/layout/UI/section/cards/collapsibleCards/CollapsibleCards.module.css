@@ -58,3 +58,7 @@
 .arrowClosed {
   transform: rotate(0deg);
 }
+
+.closedCard {
+  border: 2px solid var(--color-yellow);
+}

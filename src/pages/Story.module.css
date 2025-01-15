@@ -35,3 +35,7 @@
   font-size: 18px;
   font-weight: bold;
 }
+
+.moreStoriesContainer {
+  background-color: var(--page-background-light);
+}

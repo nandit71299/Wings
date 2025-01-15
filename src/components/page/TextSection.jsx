@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./TextSection.module.css";
+import useIsMobile from "../../hooks/useIsMobile";
 
 function TextSection({ title, description, mode }) {
   return (

@@ -11,18 +11,14 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: rgba(202, 202, 202, 0.287);
   justify-content: center;
 }
 
-.leftTab > h2 {
+.tab {
   cursor: pointer;
   font-weight: bold;
   font-size: 40px;
-}
-
-.activeTab {
-  color: white;
+  transition: color 0.5s ease-in-out;
 }
 
 .rightTab {
@@ -40,4 +36,38 @@
   font-size: 40px;
   overflow: scroll;
   text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 680px) {
+  .mainContainer {
+    flex-wrap: wrap;
+  }
+
+  .leftTab {
+    padding: 0;
+    padding: 10px 30px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .rightTab {
+    padding: 0;
+    padding: 10px 10px;
+    width: 100%;
+  }
+
+  .tab {
+    font-size: 24px;
+  }
+
+  .tabDescription {
+    min-height: 100px;
+    font-size: 20px;
+    text-align: center;
+    overflow: scroll; /* Keep scroll for the scrollbar */
+    line-clamp: 3; /* Limits to 3 lines of text */
+    text-overflow: scroll; /* Scrolls text if it's too long */
+    max-height: 150px; /* Adds max-height for scrolling on mobile */
+    padding: 10px 0px;
+  }
 }

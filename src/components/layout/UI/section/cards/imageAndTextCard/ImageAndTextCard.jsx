@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "./ImageAndTextCard.module.css";
+import useIsMobile from "../../../../../../hooks/useIsMobile";
 
 function ImageAndTextCard({ id, icon, text, color, orientation, description }) {
   const isLandscape = orientation === "landscape";
+  const isMobile = useIsMobile();
 
   return (
     <div
@@ -53,7 +55,7 @@ function ImageAndTextCard({ id, icon, text, color, orientation, description }) {
             <h4
               style={{
                 color: color === "black" ? "white" : "black",
-                fontSize: "28px",
+                fontSize: isMobile ? "18px" : "28px",
                 textAlign: "center",
               }}
             >

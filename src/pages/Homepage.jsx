@@ -18,8 +18,10 @@ import StoryCard from "../components/layout/UI/section/cards/storyCard/StoryCard
 import ExpertiseCard from "../components/layout/UI/section/cards/expertiseCard/ExpertiseCard";
 import ContactForm from "../components/page/ContactForm";
 import Footer from "../components/page/Footer";
+import useIsMobile from "../hooks/useIsMobile";
 
 function Homepage() {
+  const isMobile = useIsMobile();
   return (
     <>
       <div className={`${styles.heroSectionContainer}`}>
@@ -36,7 +38,11 @@ function Homepage() {
             title={"Services"}
             subtitle={"Transforming businesses through technology."}
           />
-          <div className="d-flex align-items-center gap-4 overflow-scroll mx-5">
+          <div
+            className={`d-flex align-items-center gap-4 overflow-scroll ${
+              isMobile ? `mx-0 px-3` : `mx-5`
+            } `}
+          >
             {servicesCards.map((service) => {
               return (
                 <div key={service.id}>
@@ -60,7 +66,11 @@ function Homepage() {
             title={"Projects"}
             subtitle={"Some of our recent projects."}
           />
-          <div className="d-flex align-items-center gap-4 overflow-scroll mx-5">
+          <div
+            className={`d-flex align-items-center gap-4 overflow-scroll ${
+              isMobile ? "m-0 ps-3" : "ms-5"
+            }`}
+          >
             {projects.map((project) => {
               return (
                 <div key={project.id} className="d-flex flex-column gap-5">
@@ -79,7 +89,11 @@ function Homepage() {
             title={"Customer Stories"}
             subtitle={"We transform our customers beliefs into reality."}
           />
-          <div className="d-flex px-5 gap-4 pb-5 overflow-scroll">
+          <div
+            className={`d-flex ${
+              isMobile ? `px-3` : "px-5"
+            } gap-4 pb-5 overflow-scroll`}
+          >
             {stories.map((story) => {
               return (
                 <div key={story.id} className="d-flex gap-5">
@@ -105,7 +119,11 @@ function Homepage() {
             title={"Expertise"}
             subtitle={"We're experts in cutting-edge technology."}
           />
-          <div className="d-flex align-items-center justify-content-between gap-4 flex-wrap mx-5">
+          <div
+            className={`d-flex align-items-center justify-content-between gap-4 flex-wrap ${
+              isMobile ? `mx-2` : `mx-5`
+            }`}
+          >
             {expertises.map((expertise) => {
               return (
                 <div key={expertise.id}>

@@ -7,7 +7,11 @@ import useIsMobile from "../../hooks/useIsMobile";
 function ContactForm() {
   const isMobile = useIsMobile();
   return (
-    <div className="d-flex flex-column justify-content-between align-items-center p-5">
+    <div
+      className={`d-flex flex-column justify-content-between align-items-center ${
+        isMobile ? `p-3 pt-5 ` : `p-5`
+      }`}
+    >
       <div
         className={`d-flex justify-content-between w-100 ${
           isMobile ? "flex-wrap" : ""
@@ -18,9 +22,19 @@ function ContactForm() {
           className="d-flex flex-column justify-content-between "
           style={{ flexGrow: 1 }}
         >
-          <h1 className={styles.heading}>
+          <h1
+            className={styles.heading}
+            style={{ fontSize: isMobile ? "38px" : "" }}
+          >
             Let's
-            <p style={{ color: "var(--text-yellow)" }}>Connect</p>
+            <p
+              style={{
+                color: "var(--text-yellow)",
+                fontSize: isMobile ? "48px" : "",
+              }}
+            >
+              Connect
+            </p>
           </h1>
           <div>
             <p className={`${styles.supportEmail}`}>

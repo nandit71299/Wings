@@ -40,3 +40,13 @@
   color: var(--text-yellow);
   width: 70%;
 }
+
+@media only screen and (max-width: 680px) {
+  .title {
+    font-size: 18px;
+  }
+  .subTitle {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}

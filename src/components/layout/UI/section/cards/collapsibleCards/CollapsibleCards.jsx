@@ -16,7 +16,12 @@ function CollapsibleCards({ data }) {
         const content = item[title];
 
         return (
-          <div key={index} className={styles.card}>
+          <div
+            key={index}
+            className={`${styles.card} ${
+              openIndex !== index && styles.closedCard
+            }`}
+          >
             <div
               className={styles.cardHeader}
               onClick={() => handleToggle(index)}
@@ -25,7 +30,6 @@ function CollapsibleCards({ data }) {
                 {content.icon && (
                   <img
                     src={content.icon}
-                    className="img-fluid"
                     style={{ width: "40px", height: "40px" }}
                     alt=""
                   />

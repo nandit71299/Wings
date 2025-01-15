@@ -53,8 +53,9 @@ function Story() {
           ]}
         />
       </div>
-      <div>
+      <div className={styles.moreStoriesContainer}>
         <SectionHeading
+          mode="light"
           title={"More Stories"}
           subtitle={"We transform our customers beliefs into reality."}
         />
@@ -63,6 +64,7 @@ function Story() {
             return (
               <div key={story.id} className="d-flex gap-5">
                 <StoryCard
+                  mode={"light"}
                   img={story.img}
                   sector={story.sector}
                   service={story.service}

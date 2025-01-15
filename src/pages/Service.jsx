@@ -8,10 +8,12 @@ import TextSection from "../components/page/TextSection";
 import ImageAndTextCard from "../components/layout/UI/section/cards/imageAndTextCard/ImageAndTextCard.jsx";
 import ContactForm from "../components/page/ContactForm";
 import Footer from "../components/page/Footer";
+import useIsMobile from "../hooks/useIsMobile.js";
 
 function Service() {
   const params = useParams();
   const id = params.id;
+  const isMobile = useIsMobile();
 
   const service = servicesCards.find((service) => service.id === parseInt(id));
 
@@ -26,16 +28,20 @@ function Service() {
           title={`Services / ${service.title}`}
         />
       </div>
-      <div className="px-5 py-5">
+      <div className={`${isMobile ? "px-3 py-5" : ` px-5 py-5`}`}>
         <TextSection title={service.title} description={service.description} />
       </div>
 
       {/* Advantages */}
       <div className="pb-5 w-100">
-        <div className="px-5 py-5">
+        <div className={`${isMobile ? `px-3 py-5` : `px-5 py-5`}`}>
           <TextSection title={"Wings Advantage"} />
         </div>
-        <div className="d-flex align-items-center h-100 w-100 justify-space-between">
+        <div
+          className={`d-flex align-items-center h-100 w-100 justify-space-between ${
+            isMobile ? "flex-wrap" : ""
+          }`}
+        >
           {advantages.map((advantage) => (
             <div className="p-0 w-100">
               <ImageAndTextCard
@@ -52,7 +58,7 @@ function Service() {
 
       {/* why develop with us */}
       <div className={styles.whyUsContainer}>
-        <div className="px-5 py-5">
+        <div className={`${isMobile ? `px-3 py-5` : `px-5 py-5`}`}>
           <TextSection
             title={"Why Develop with Wings"}
             description={
