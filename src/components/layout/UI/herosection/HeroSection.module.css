@@ -1,6 +1,6 @@
 .mainContainer {
   height: 548px;
-  width: 100vw;
+  width: 100%;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -31,10 +31,12 @@
   z-index: 1;
   color: var(--text-white);
   font-size: 24px;
+  width: 50%;
 }
 
 .subTitle {
   z-index: 1;
   font-size: 40px;
   color: var(--text-yellow);
+  width: 70%;
 }

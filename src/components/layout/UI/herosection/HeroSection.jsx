@@ -15,7 +15,7 @@ function HeroSection({ img, title, subtitle }) {
         className={styles.backgroundOverlay}
         style={{
           background: isMobile
-            ? "linear-gradient(200.68deg, rgba(0, 0, 0, 0.54) 52.65%, rgba(133, 133, 133, 0) 100%);"
+            ? "linear-gradient(200.68deg, rgba(0, 0, 0, 0.54) 52.65%, rgba(133, 133, 133, 0) 100%)"
             : "",
         }}
       ></div>

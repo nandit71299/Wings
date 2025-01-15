@@ -56,10 +56,10 @@ const footerData = {
     {
       title: "About Us",
       items: [
-        { label: "About Us", href: "/about/about-us" },
-        { label: "Contact Us", href: "/about/contact-us" },
-        { label: "Privacy Policy", href: "/about/privacy-policy" },
-        { label: "Terms of Services", href: "/about/terms-of-services" },
+        { label: "About Us", href: "/who-are-we/about-us" },
+        { label: "Contact Us", href: "/who-are-we/contact-us" },
+        { label: "Privacy Policy", href: "/who-are-we/privacy-policy" },
+        { label: "Terms of Services", href: "/who-are-we/terms-of-services" },
       ],
     },
     {

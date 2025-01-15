@@ -1,0 +1,7 @@
+.mainContainer {
+  background-color: var(--page-background-dark);
+}
+
+.whyUsContainer {
+  background-color: var(--page-background-light);
+}

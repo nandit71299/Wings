@@ -1,0 +1,12 @@
+.title {
+  color: var(--text-white);
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: var(--text-gray);
+  text-align: justify;
+  line-height: 35px;
+  font-size: 24px;
+}

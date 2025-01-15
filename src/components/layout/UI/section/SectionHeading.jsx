@@ -4,7 +4,7 @@ import styles from "./SectionHeading.module.css";
 function SectionHeading({ title, subtitle, mode }) {
   return (
     <>
-      <div className="p-5 pt-5 py-5 pb-2">
+      <div className="p-5 pt-5 py-5 pb-4">
         <h1 className={mode === "light" ? styles.titleLight : styles.titleDark}>
           {title}
         </h1>

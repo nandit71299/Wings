@@ -1,0 +1,43 @@
+.mainContainer {
+  display: flex;
+  height: 400px;
+  width: 100%;
+}
+
+.leftTab {
+  background-color: black;
+  padding: 50px;
+  padding-left: 10%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-gray);
+  justify-content: center;
+}
+
+.leftTab > h2 {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.activeTab {
+  color: white;
+}
+
+.rightTab {
+  background-color: white;
+  padding: 50px;
+  width: 50%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tabDescription {
+  font-size: 40px;
+  overflow: scroll;
+  text-overflow: ellipsis;
+}

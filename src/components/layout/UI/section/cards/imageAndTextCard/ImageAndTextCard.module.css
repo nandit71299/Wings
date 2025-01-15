@@ -1,0 +1,50 @@
+.advantageItem {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column; /* Default to column layout */
+  gap: 20px;
+  height: 250px;
+  padding: 20px;
+  width: 100%;
+}
+
+.advantageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  flex-grow: 1;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textContainer h4 {
+  margin: 0;
+}
+
+.textContainer p {
+  margin-top: 8px;
+}
+
+.description {
+  color: var(--text-gray);
+  font-weight: 500;
+  font-size: 24px;
+}

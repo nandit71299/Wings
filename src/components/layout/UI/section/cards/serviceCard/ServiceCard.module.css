@@ -2,6 +2,7 @@
   height: 388px;
   width: auto;
   position: relative;
+  cursor: pointer;
 }
 
 .serviceImg {
