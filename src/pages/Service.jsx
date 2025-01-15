@@ -5,7 +5,7 @@ import HeroSection from "../components/layout/UI/herosection/HeroSection";
 import heroSectionImg from "../assets/imgAssets/clients.jpg";
 import styles from "./Service.module.css";
 import TextSection from "../components/page/TextSection";
-import ImageAndTextCard from "../components/layout/UI/section/cards/imageAndTextCard/imageAndTextCard.jsx";
+import ImageAndTextCard from "../components/layout/UI/section/cards/imageAndTextCard/ImageAndTextCard.jsx";
 import ContactForm from "../components/page/ContactForm";
 import Footer from "../components/page/Footer";
 
