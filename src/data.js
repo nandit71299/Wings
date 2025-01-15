@@ -1,6 +1,8 @@
 import mobileAppImg from "./assets/imgAssets/mobile-app.jpg";
 import eCommerceImg from "./assets/imgAssets/e-commerce.jpg";
 import webImg from "./assets/imgAssets/web.jpg";
+import softwareTesting from "./assets/imgAssets/softwareTesting.jpg";
+import seo from "./assets/imgAssets/seo.jpg";
 
 import thingTestingLogo from "./assets/projects/thing-testing-logo.png";
 import commercialEstateLogo from "./assets/projects/commercial-real-estate-logo.png";
@@ -19,6 +21,10 @@ import nextjsLogo from "./assets/expertise/nextjs.svg";
 import nodejsLogo from "./assets/expertise/nodejs.png";
 import wordpressLogo from "./assets/expertise/wordpress.png";
 
+import challangeIcon from "./assets/imgAssets/challange.png";
+import solutionIcon from "./assets/imgAssets/solution.png";
+import outcomeIcon from "./assets/imgAssets/outcome.png";
+
 import ontimedelivery from "./assets/imgAssets/ontimedelivery.png";
 import opcontent from "./assets/imgAssets/opcontent.png";
 import socialmedia from "./assets/imgAssets/socialmedia.png";
@@ -28,37 +34,6 @@ import easyToUse from "./assets/imgAssets/easytouse.png";
 import mobilefriendly from "./assets/imgAssets/mobilefriendly.png";
 import quick from "./assets/imgAssets/quick.png";
 import secure from "./assets/imgAssets/secure.png";
-
-const servicesCards = [
-  {
-    id: 1,
-    title: "Mobile App Development",
-    img: `${mobileAppImg}`,
-    description:
-      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration.With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
-  },
-  {
-    id: 2,
-    title: "E-commerce Development",
-    img: `${eCommerceImg}`,
-    description:
-      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration.With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
-  },
-  {
-    id: 3,
-    title: "Web Development",
-    img: `${webImg}`,
-    description:
-      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration.With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
-  },
-  {
-    id: 4,
-    title: "Custom Software Development",
-    img: `${mobileAppImg}`,
-    description:
-      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration.With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
-  },
-];
 
 const projects = [
   {
@@ -92,11 +67,32 @@ const stories = [
   {
     id: 1,
     sector: "Online Streaming",
-    service: "Web Developement",
+    service: "Web Development",
     title: "Radio Mirchi",
     img: micImg,
+    storyTitle:
+      "Wings helped Radio Mirchi establish its online presence with a cutting-edge web application.",
     story:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consectetur ipsa laudantium ipsam recusandae dolor possimus earum facere voluptatum.",
+      "Radio Mirchi, a leading online streaming service, needed a robust platform to enhance user experience and engagement. Wings developed a scalable web app to handle high traffic, user interactions, and streaming demands.",
+    deployedLink: "https://www.radiomirchi.com",
+    challenge: {
+      icon: challangeIcon,
+      title: "Handling High Traffic and Seamless Streaming",
+      description:
+        "Radio Mirchi faced challenges in handling large numbers of concurrent users while ensuring high-quality, uninterrupted streaming. The previous platform was unable to scale with the growing number of listeners and faced performance issues.",
+    },
+    solution: {
+      icon: solutionIcon,
+      title: "Developing a Scalable, User-Centric Web Platform",
+      description:
+        "Wings developed a new, high-performance platform with cloud integration, capable of scaling based on user demand. The design focused on creating an intuitive and engaging user experience, enabling users to enjoy uninterrupted radio streaming across multiple devices.",
+    },
+    outcome: {
+      icon: outcomeIcon,
+      title: "Enhanced User Experience and Streamlined Performance",
+      description:
+        "After the deployment, Radio Mirchi witnessed an increase in user engagement, improved streaming quality, and a reduction in downtime. The platform’s scalability allowed them to efficiently handle peak traffic, improving their overall service quality.",
+    },
   },
   {
     id: 2,
@@ -104,8 +100,34 @@ const stories = [
     service: "Web Development",
     title: "AushadhiKart",
     img: ayurvedaImg,
+    storyTitle:
+      "Wings helps AushadhiKart establish an online presence and sell their products through a robust website.",
     story:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consectetur ipsa laudantium ipsam recusandae dolor possimus earum facere voluptatum.",
+      "AushadhiKart, an Ayurvedic medicine e-commerce platform, faced significant challenges in establishing a strong online presence and selling their products efficiently. Wings developed an easy-to-use e-commerce platform to address these needs.",
+    deployedLink: "https://www.aushadhikart.com/",
+    challenge: {
+      icon: challangeIcon,
+      title:
+        "Overcoming the Digital Divide: Increasing Online Engagement for Ayurvedic Brands",
+      description:
+        "AushadhiKart faced challenges in engaging its target audience and overcoming customer skepticism around online wellness purchases. The competition in the Ayurvedic market was intense, with limited visibility in the online space.",
+    },
+    solution: {
+      icon: solutionIcon,
+
+      title:
+        "AushadhiKart: Revolutionizing Online Healthcare through Web Development",
+      description:
+        "Wings developed a cutting-edge web application that met AushadhiKart's e-commerce needs, ensuring a seamless user experience. Features like product recommendations, secure payment gateways, and a simple checkout process helped boost engagement and conversion rates.",
+    },
+    outcome: {
+      icon: outcomeIcon,
+
+      title:
+        "AushadhiKart: Revolutionizing Online Healthcare through Web Development",
+      description:
+        "With the launch of their new platform, AushadhiKart successfully improved customer engagement, expanded its product reach, and experienced significant growth in online sales, establishing itself as a trusted e-commerce brand for Ayurvedic products.",
+    },
   },
   {
     id: 3,
@@ -113,8 +135,33 @@ const stories = [
     service: "Web Development",
     title: "Insurance Samadhan",
     img: legalMeetingImg,
+    storyTitle:
+      "Wings empowers Insurance Samadhan with a user-friendly platform to simplify insurance claim processes.",
     story:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consectetur ipsa laudantium ipsam recusandae dolor possimus earum facere voluptatum.",
+      "Insurance Samadhan faced significant issues with simplifying the insurance claim process for their clients. Wings created a web platform that made it easier for users to submit and track claims, bridging the gap between insurance companies and their customers.",
+    deployedLink: "https://www.insurancesamadhan.com/",
+    challenge: {
+      icon: challangeIcon,
+
+      title: "Simplifying Insurance Claims and Customer Interactions",
+      description:
+        "Insurance Samadhan needed a platform that could easily guide customers through the complex insurance claims process, making it user-friendly while ensuring transparency and easy access to claim status updates.",
+    },
+    solution: {
+      icon: solutionIcon,
+
+      title: "Creating a Centralized Insurance Claims Management System",
+      description:
+        "Wings developed a centralized platform that allowed users to easily file claims, check status updates, and directly communicate with insurance agents. Features like real-time updates, FAQ sections, and a helpdesk system made the process seamless.",
+    },
+    outcome: {
+      icon: outcomeIcon,
+
+      title:
+        "Streamlined Insurance Claim Process with High Client Satisfaction",
+      description:
+        "Since the platform’s deployment, Insurance Samadhan has experienced improved customer satisfaction, faster claim resolutions, and a noticeable increase in client engagement. The platform has become an essential tool for streamlining insurance claims in the Indian market.",
+    },
   },
   {
     id: 4,
@@ -122,17 +169,69 @@ const stories = [
     service: "Web Development",
     title: "Commercial Real Estate",
     img: buildingImg,
+    storyTitle:
+      "Wings builds a seamless platform for Commercial Real Estate to showcase properties and facilitate transactions.",
     story:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consectetur ipsa laudantium ipsam recusandae dolor possimus earum facere voluptatum.",
+      "Commercial Real Estate was facing challenges in handling their large property portfolio and connecting buyers with sellers efficiently. Wings developed a platform that allowed for easy property browsing, booking, and contact with agents.",
+    deployedLink: "https://www.commercialrealestate.com/",
+    challenge: {
+      icon: challangeIcon,
+
+      title:
+        "Increasing Visibility and Reducing Transactional Barriers in Real Estate",
+      description:
+        "Commercial Real Estate had a vast portfolio of properties that were not being effectively showcased online. Additionally, the process for contacting agents and finalizing deals was time-consuming and inefficient.",
+    },
+    solution: {
+      icon: solutionIcon,
+
+      title:
+        "Revolutionizing Property Listings and Transactions with Web Development",
+      description:
+        "Wings created an easy-to-navigate platform with robust property search capabilities, detailed listings, and instant communication tools to connect potential buyers with agents. The streamlined system also allowed for easy booking and transaction management.",
+    },
+    outcome: {
+      icon: outcomeIcon,
+
+      title: "Successful Property Sales and Enhanced Market Reach",
+      description:
+        "The new platform resulted in an increase in inquiries and transactions. Commercial Real Estate was able to expand its reach, attract more buyers, and close deals faster, boosting their overall sales performance.",
+    },
   },
   {
     id: 5,
     sector: "Legal",
     service: "Web Development",
-    title: "Isreal Legal Services",
-    img: `${legalMeetingImg}`,
+    title: "Israel Legal Services",
+    img: legalMeetingImg,
+    storyTitle:
+      "Wings helps Israel Legal Services modernize their client intake and case management system with a custom platform.",
     story:
-      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis consectetur ipsa laudantium ipsam recusandae dolor possimus earum facere voluptatum.",
+      "Israel Legal Services needed a streamlined platform to handle client intake and case management efficiently. Wings developed a comprehensive system that integrated these processes into one platform.",
+    deployedLink: "https://www.israellegalservices.com/",
+    challenge: {
+      icon: challangeIcon,
+
+      title: "Improving Case Management Efficiency and Client Interaction",
+      description:
+        "Israel Legal Services was dealing with inefficiencies in handling case files and client data. Their existing process was highly manual, leading to errors and delays, which affected client satisfaction.",
+    },
+    solution: {
+      icon: solutionIcon,
+
+      title:
+        "Digital Transformation for Legal Services: Simplifying Case Management",
+      description:
+        "Wings created a custom platform that digitized the entire process, allowing for easy case tracking, document submission, and client communication. The new system saved time and improved overall service delivery.",
+    },
+    outcome: {
+      icon: outcomeIcon,
+
+      title:
+        "Enhanced Operational Efficiency and Improved Client Relationships",
+      description:
+        "With the implementation of the new platform, Israel Legal Services significantly improved operational efficiency, reduced errors, and provided a better experience for their clients, leading to higher client retention and satisfaction.",
+    },
   },
 ];
 
@@ -299,8 +398,50 @@ const probSolvingApproach = [
   },
 ];
 
+const services = [
+  {
+    id: 1,
+    title: "Web Application Development",
+    img: webImg,
+    description:
+      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration. With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
+    href: "/service/1",
+  },
+  {
+    id: 2,
+    title: "Mobile App Development",
+    img: mobileAppImg,
+    description:
+      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration. With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
+    href: "/services/mobile-app-development",
+  },
+  {
+    id: 3,
+    title: "E-commerce Development",
+    img: eCommerceImg,
+    description:
+      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration. With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
+    href: "/services/ecommerce-development",
+  },
+  {
+    id: 4,
+    title: "Software Testing & QA",
+    img: softwareTesting,
+    description:
+      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration. With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
+    href: "/services/software-testing-qa",
+  },
+  {
+    id: 5,
+    title: "SEO",
+    img: seo,
+    description:
+      "When it comes to expanding your business on different domains, you need a robust base to ensure a successful journey throughout the process. And this is where Wings Tech offers highly reliable web development services by keeping your business target into consideration. With the booming internet world, creating an online presence is crucial, but many often oversee the aspects that act as building blocks of a successful business website. At Wings Tech, we understand the entire concept, schedule, and, most importantly, your expenses and thus develop a website that fits all your filters!",
+    href: "/services/seo",
+  },
+];
+
 export {
-  servicesCards,
   projects,
   stories,
   expertises,
@@ -308,4 +449,5 @@ export {
   whyUs,
   aboutUs,
   probSolvingApproach,
+  services,
 };

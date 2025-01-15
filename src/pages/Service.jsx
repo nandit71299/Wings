@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { servicesCards, advantages, whyUs } from "../data";
+import { services as servicesCards, advantages, whyUs } from "../data";
 import HeroSection from "../components/layout/UI/herosection/HeroSection";
 import heroSectionImg from "../assets/imgAssets/clients.jpg";
 import styles from "./Service.module.css";
@@ -23,7 +23,7 @@ function Service() {
           subtitle={
             "Take Flight with Wings, Wings gives your business the digital life it needs."
           }
-          title={"Services / Web Development"}
+          title={`Services / ${service.title}`}
         />
       </div>
       <div className="px-5 py-5">

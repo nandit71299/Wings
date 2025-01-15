@@ -1,0 +1,60 @@
+.card {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px;
+  background-color: var(--page-background-light);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px;
+  color: var(--text-black);
+  border-radius: 5px;
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: 48px;
+}
+
+.cardDescription {
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.cardDescription.open {
+  opacity: 1;
+  max-height: 500px;
+}
+
+.cardDescription h2 {
+  width: 80%;
+  font-size: 32px;
+}
+
+.cardDescription p {
+  margin: 0;
+  font-weight: bold;
+  color: var(--text-gray);
+  font-weight: bold;
+}
+
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrowOpen {
+  transform: rotate(90deg);
+}
+
+.arrowClosed {
+  transform: rotate(0deg);
+}

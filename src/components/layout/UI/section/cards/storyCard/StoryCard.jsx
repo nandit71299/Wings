@@ -1,9 +1,17 @@
 import React from "react";
 import styles from "./StoryCard.module.css";
+import { useNavigate } from "react-router-dom";
 
-function StoryCard({ sector, service, title, img, story }) {
+function StoryCard({ id, sector, service, title, img, story }) {
+  const navigate = useNavigate();
   return (
-    <div className={styles.cardContainer}>
+    <div
+      className={styles.cardContainer}
+      onClick={() => {
+        navigate(`/stories/${id}`);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }}
+    >
       <div className={styles.imgContainer}>
         <img src={img} alt="Story Card Image" className={styles.img} />
       </div>

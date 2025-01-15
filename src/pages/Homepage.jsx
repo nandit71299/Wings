@@ -5,7 +5,12 @@ import styles from "./Homepage.module.css";
 import HeroSection from "../components/layout/UI/herosection/HeroSection";
 import heroSectionBg from "../assets/imgAssets/landscape-buildings.jpg";
 import SectionHeading from "../components/layout/UI/section/SectionHeading";
-import { servicesCards, expertises, projects, stories } from "../data";
+import {
+  services as servicesCards,
+  expertises,
+  projects,
+  stories,
+} from "../data";
 
 import ServiceCard from "../components/layout/UI/section/cards/serviceCard/SeviceCard";
 import ProjectCard from "../components/layout/UI/section/cards/projectCard/ProjectCard";
@@ -84,6 +89,7 @@ function Homepage() {
                     service={story.service}
                     title={story.title}
                     story={story.story}
+                    id={story.id}
                   />
                 </div>
               );

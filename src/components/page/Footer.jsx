@@ -1,31 +1,18 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import useIsMobile from "../../hooks/useIsMobile";
+import { services } from "../../data";
 
 const footerData = {
   menu: [
     {
       title: "Services",
-      items: [
-        {
-          label: "Web Application Development",
-          href: "/services/web-application-development",
-        },
-        {
-          label: "Mobile App Development",
-          href: "/services/mobile-app-development",
-        },
-        {
-          label: "E-commerce Development",
-          href: "/services/ecommerce-development",
-        },
-        {
-          label: "Software Testing & QA",
-          href: "/services/software-testing-qa",
-        },
-        { label: "SEO", href: "/services/seo" },
-        { label: "Digital Marketing", href: "/services/digital-marketing" },
-      ],
+      // Directly assign the `services` data to the `items`
+      items: services.map((service) => ({
+        id: service.id,
+        label: service.title, // You can map the service's title to label
+        href: service.href, // You can map the service's href
+      })),
     },
     {
       title: "Outsourcing",
@@ -54,9 +41,9 @@ const footerData = {
       ],
     },
     {
-      title: "About Us",
+      title: "Who are we",
       items: [
-        { label: "About Us", href: "/who-are-we/about-us" },
+        { label: "About Us", href: "/who-are-we" },
         { label: "Contact Us", href: "/who-are-we/contact-us" },
         { label: "Privacy Policy", href: "/who-are-we/privacy-policy" },
         { label: "Terms of Services", href: "/who-are-we/terms-of-services" },
@@ -92,11 +79,23 @@ function Footer() {
             <div key={index}>
               <h4 className={styles.sectionTitle}>{section.title}</h4>
               <ul className={styles.list}>
-                {section.items.map((item, idx) => (
-                  <li key={idx} className={styles.listItem}>
-                    <a href={item.href}>{item.label}</a>
-                  </li>
-                ))}
+                {section.items.map((item, idx) => {
+                  return (
+                    <li key={idx} className={styles.listItem}>
+                      {item.id ? (
+                        <a
+                          href={`/${section.title.split(" ").join("")}/${
+                            item.id
+                          }`}
+                        >
+                          {item.label}
+                        </a>
+                      ) : (
+                        <a href={item.href}>{item.label}</a>
+                      )}
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}

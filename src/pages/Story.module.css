@@ -1,0 +1,37 @@
+.mainContainer {
+  background-color: var(--page-background-dark);
+}
+
+.breifDetailsContainer {
+  display: flex;
+  gap: 200px;
+}
+
+.breif__serviceInfo > h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--text-gray);
+}
+
+.breif__serviceInfo > p {
+  color: var(--text-white);
+  font-size: 24px;
+}
+
+.breif__deployedLink {
+}
+
+.breif__deployedLink > button {
+  background-color: var(--button-white);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.breif__deployedLink > button > a {
+  text-decoration: none;
+  color: var(--text-black);
+  font-size: 18px;
+  font-weight: bold;
+}

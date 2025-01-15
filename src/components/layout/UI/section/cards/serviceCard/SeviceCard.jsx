@@ -8,7 +8,7 @@ function SectionCard({ title, img, id }) {
   return (
     <div
       className={`${styles.cardContainer} position-relative`}
-      onClick={() => navigate(`/service/${id}`)}
+      onClick={() => navigate(`/services/${id}`)}
     >
       <img className={styles.serviceImg} src={img} alt={title} />
       <div className={`${styles.backgroundOverlay}`}>
