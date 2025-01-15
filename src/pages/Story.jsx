@@ -5,7 +5,7 @@ import HeroSection from "../components/layout/UI/herosection/HeroSection";
 import { stories } from "../data";
 import { useParams } from "react-router-dom";
 import heroSectionBgImg from "../assets/imgAssets/meeting.jpg";
-import CollapsibleCards from "../components/layout/UI/section/cards/collapsibleCards/collapsibleCards";
+import CollapsibleCards from "../components/layout/UI/section/cards/collapsibleCards/CollapsibleCards";
 import StoryCard from "../components/layout/UI/section/cards/storyCard/StoryCard";
 import SectionHeading from "../components/layout/UI/section/SectionHeading";
 import ContactForm from "../components/page/ContactForm";
