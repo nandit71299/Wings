@@ -1,7 +1,7 @@
 import mobileAppImg from "./assets/imgAssets/mobile-app.jpg";
 import eCommerceImg from "./assets/imgAssets/e-commerce.jpg";
 import webImg from "./assets/imgAssets/web.jpg";
-import softwareTesting from "./assets/imgAssets/softwareTesting.jpg";
+import softwareTesting from "./assets/imgAssets/softwaretesting.jpg";
 import seo from "./assets/imgAssets/seo.jpg";
 
 import thingTestingLogo from "./assets/projects/thing-testing-logo.png";
