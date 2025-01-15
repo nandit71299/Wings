@@ -5,6 +5,9 @@
   justify-content: center;
   align-items: center;
   color: white;
+  position: fixed;
+  z-index: 9;
+  width: 100%;
 }
 
 ul {
