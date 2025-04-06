@@ -3,7 +3,7 @@ name: Deploy to EC2
 on:
   push:
     branches:
-      - main # change if your deploy branch is different
+      - main
 
 jobs:
   deploy:
@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+      - name: Debug Print EC2 host
+        run: echo "Deploying to ${{ secrets.EC2_HOST }}"
 
       - name: Set up SSH
         run: |

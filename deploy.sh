@@ -1,17 +1,18 @@
 #!/bin/bash
 
-echo "🚀 Starting deployment..."
+echo "🚀 Starting React frontend deployment..."
 
-# Navigate to the app directory
 cd ~/app
 
-# Optional: install/update dependencies
+# Install dependencies
 npm install
 
-# Optional: build step
-# npm run build
+# Build the React app
+npm run build
 
-# Restart server (example using PM2)
-pm2 restart app || pm2 start npm --name "app" -- start
+# Move build to web server directory (e.g. /var/www/html)
+sudo rm -rf /var/www/html/*
+sudo cp -r build/* /var/www/html/
 
 echo "✅ Deployment complete!"
+    
