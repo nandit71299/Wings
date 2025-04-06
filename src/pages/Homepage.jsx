@@ -35,7 +35,7 @@ function Homepage() {
         {/* Services Section */}
         <div className={`${styles.servicesContainer} pb-5 `}>
           <SectionHeading
-            title={'Servicesssss'}
+            title={'Services'}
             subtitle={'Transforming businesses through technology.'}
           />
           <div
